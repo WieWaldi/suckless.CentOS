@@ -49,7 +49,7 @@ static char *colors[][3] = {
 ResourcePref resources[] = {
 		{ "mfact",              FLOAT,   &mfact },
 		{ "borderpx",           INTEGER, &borderpx },
-		{ "gappx",              STRING,  &normbgcolor },
+		{ "gappx",              INTEGER, &gappx },
 		{ "snap",               INTEGER, &snap },
 		{ "resizehints",        INTEGER, &resizehints },
 		{ "nmaster",            INTEGER, &nmaster },
@@ -93,6 +93,7 @@ static const Rule rules[] = {
 	{ "gnuplot_qt",         NULL,                                   NULL,                           0,            1,            1,          -1 },
 	{ "Krasses Radio",      NULL,                                   NULL,                           1 << 1,       1,            1,          -1 },
 	{ "mpv",                NULL,                                   NULL,                           0,            1,            1,          -1 },
+	{ "Pavucontrol",        "pavucontrol",                          NULL,                           0,            1,            1,          -1 },
 	{ "Teams",              NULL,                                   NULL,                           1 << 6,       0,            0,          -1 },
 	{ "Thunderbird",        NULL,                                   NULL,                           1 << 7,       0,            0,          -1 },
 	{ "Thunderbird",        "Calendar",                             NULL,                           1 << 7,       1,            1,          -1 },

@@ -49,6 +49,8 @@ mesa-dri-drivers
 mesa-dri-drivers
 mesa-libEGL
 mesa-libGL
+mplayer
+mpv
 ncurses-devel
 ncurses-term
 net-tools
@@ -56,6 +58,7 @@ ntp
 ntpdate
 pango-devel
 patch
+pavucontrol
 perl
 pulseaudio
 pulseaudio-libs-devel
