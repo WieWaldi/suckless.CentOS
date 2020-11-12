@@ -74,8 +74,7 @@ Install_X11files() {
     done
     cp -r ${cdir}/.local/share/fonts ${HOME}/.local/share
     cp -r ${cdir}/.local/share/wallpapers ${HOME}/.local/share
-    cp -r ${cdir}/.local/share/icons ${HOME}/.local/icons
-    cp -r ${cdir}/.local/share/dwm ${HOME}/.local/dwm
+    cp -r ${cdir}/.local/share/icons ${HOME}/.local/share
     cp -r ${cdir}/compton/compton.conf ${HOME}/.config
     cp -r ${cdir}/dunst/dunstrc ${HOME}/.config/dunst
     cp -r ${cdir}/X.org.files/.xsession
