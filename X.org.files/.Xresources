@@ -21,15 +21,15 @@
 
 !================================ dwm relatd ===================================
 dwm.mfact:                                      0.55
-dwm.borderpx:                                   5
-dwm.gappx:                                      15
+dwm.borderpx:                                   0
+dwm.gappx:                                      3
 dwm.snap:                                       10
 dwm.resizehints:                                1
 dwm.nmaster:                                    1
 dwm.showbar:                                    1
 dwm.topbar:                                     1
-dwm.vertpad:                                    10
-dwm.sidepad:                                    10
+dwm.vertpad:                                    3
+dwm.sidepad:                                    3
 dwm.normfgcolor:                                #bbbbbb
 dwm.normbgcolor:                                #222222
 dwm.normbordercolor:                            #444444
