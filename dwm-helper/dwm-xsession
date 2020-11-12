@@ -33,7 +33,7 @@ PATH=$PATH:~/.local/bin
 
 # Start my stuff
 # ---------------------------------------------------------------------------
-amixer -q -D pulse sset Master 25%
+# amixer -q -D pulse sset Master 25%
 # ${HOME}/.local/bin/st &
 # ${HOME}/.local/bin/st &
 

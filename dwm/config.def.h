@@ -140,12 +140,12 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]           = { "dmenu_run", "-m", dmenumon, "-i", "-c", "-l", "15", "-bw", "2", "-p", "Яцп ТЋїѕ Ѕћїт:", NULL };
-static const char *dmenusystem[]        = { "dwm_system", "-i", "-c", "-l", "15", "-bw", "2", "-p", "ЩЋдт тѳ dѳ", NULL };
-static const char *dmenumedia[]         = { "dwm_media", "-i", "-c", "-l", "15", "-bw", "2", "-p", "Play Radio", NULL };
+static const char *dmenusystem[]        = { "dwm-system", "-i", "-c", "-l", "15", "-bw", "2", "-p", "ЩЋдт тѳ dѳ", NULL };
+static const char *dmenumedia[]         = { "dwm-media", "-i", "-c", "-l", "15", "-bw", "2", "-p", "Play Radio", NULL };
 static const char *termcmd[]            = { "st", NULL };
-static const char *volumeup[]           = { "dwm_volumectrl", "up", NULL };
-static const char *volumedown[]         = { "dwm_volumectrl", "down", NULL };
-static const char *volumemute[]         = { "dwm_volumectrl", "mute", NULL };
+static const char *volumeup[]           = { "dwm-volumectrl", "up", NULL };
+static const char *volumedown[]         = { "dwm-volumectrl", "down", NULL };
+static const char *volumemute[]         = { "dwm-volumectrl", "mute", NULL };
 static const char *xmenu[]              = { "xmenu.sh", NULL };
 
 static Key keys[] = {
