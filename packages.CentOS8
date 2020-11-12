@@ -68,6 +68,7 @@ samba-client
 samba-common
 sddm
 tar
+thunar
 vifm
 vim
 webkitgtk4-devel
