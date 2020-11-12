@@ -14,7 +14,7 @@
 amixer -q -D pulse sset Master 25%
 ${HOME}/.local/bin/xclickroot -r ${HOME}/.local/bin/xmenu.sh &
 /bin/dbus-launch ${HOME}/.local/bin/compton &
-${HOME}/.local/bin/dwm_status &
+${HOME}/.local/bin/dwm-status &
 ${HOME}/.local/bin/rotwall ${HOME}/.local/share/wallpapers 300 &
 
 ${HOME}/.local/bin/st &
