@@ -1,11 +1,12 @@
 #!/bin/sh
 #
 # +-------------------------------------------------------------------------+
-# | Name of the Script                                                      |
+# | slock-wrapper                                                           |
 # +-------------------------------------------------------------------------+
-# | Copyright © 2019 Waldemar Schroeer                                      |
+# | Copyright © 2020 Waldemar Schroeer                                      |
 # |                  waldemar.schroeer(at)rz-amper.de                       |
 # +-------------------------------------------------------------------------+
 
-# ~/.local/bin/slock -m "$(/bin/cowsay "$(/bin/fortune -a drugs)")"
-~/.local/bin/slock -m "$(/bin/cat ~/.slocktext)"
+# ${HOME}/.local/bin/slock -m "$(/bin/cowsay "$(/bin/fortune -a drugs)")" & 2>/dev/null
+
+${HOME}/.local/bin/slock -m "$(/bin/cat ~/.slocktext)" & 2>/dev/null
