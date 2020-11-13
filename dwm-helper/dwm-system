@@ -9,7 +9,7 @@
 
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${HOME}/.local/lib64:${HOME}/.local/lib
 antwoord="$( printf "Lock\nShutdown\nReboot\nExit\nScreenshot - Desktop\nScreenshot - active window\nScreenshot - selection" | dmenu "$@" )"
-maim="/home/wiewaldi/.local/bin/maim -m 10"
+maim="${HOME}/.local/bin/maim -m 10 -q -d 1"
 date=$(date +%Y-%m-%d-%H-%M-%S)
 log="${HOME}/tmp/dwm.log"
 scrnsht="${HOME}/Screenshots/${date}.jpg"
@@ -38,7 +38,7 @@ case ${antwoord} in
     "Screenshot - Desktop")
         ${maim} ${scrnsht}
         echo ${scrnsht} | tr -d '\n' | xclip -sel p
-        notify-send 'Info' "Screenshot of whole fucking Desktop taken.\n${scrnsht}"
+        notify-send 'Info' "Screenshot of whole Desktop taken.\n${scrnsht}"
         ;;
     "Screenshot - active window")
         activewindow=$(xdotool getactivewindow)
