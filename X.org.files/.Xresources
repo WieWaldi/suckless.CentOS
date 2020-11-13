@@ -86,6 +86,14 @@ st*color15:                                     S_base3
 st.background:                                  S_base3
 st.foreground:                                  S_base00
 
+!================================ slock relatd =================================
+slock.color0:                                   #8700af
+slock.color1:                                   #dc322f
+slock.color3:                                   #550000
+slock.color4:                                   #af87d7
+slock.fontname:                                 10x20
+slock.fontcolor:                                #afafaf
+
 !================================ Xcursor relatd ===============================
 Xcursor.theme:                                  ComixCursors-Blue
 Xcursor.size:                                   16
