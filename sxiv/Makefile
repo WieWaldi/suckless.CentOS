@@ -61,7 +61,7 @@ version.h: Makefile .git/index
 .git/index:
 
 clean:
-	rm -f *.o sxiv config.h version.h
+	rm -f *.o sxiv version.h
 
 install: all
 	@echo "INSTALL bin/sxiv"
