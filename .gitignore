@@ -6,8 +6,15 @@ prepare.log
 *.o
 *.so*
 
-# suckless.org
-sselp/sselp
+dwm/config.h
+st/config.h
+dmenu/config.h
+dunst/config.h
+slock/config.h
+surf/config.h
+sxiv/config.h
+tabbed/config.h
+xmenu/config.h
 
 # xdotool
 xdotool/xdo_version.h
