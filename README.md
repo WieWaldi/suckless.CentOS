@@ -5,6 +5,8 @@ missleading since it doesn't contain suckless implementations only but other
 stuff as well. This repo targets specially and only a minimal installation of
 CentOS 7/8.
 
+![screenshot](https://raw.githubusercontent.com/WieWaldi/suckless.CentOS/master/screenshot/screenshot.jpg)
+
 ## Motivation ...
 ... is to get a CentOS minimal installation equiped with a suckless graphical
 user interface in pretty much no time and hassle using a script for building
