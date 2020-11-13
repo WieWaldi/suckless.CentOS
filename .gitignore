@@ -39,6 +39,7 @@ maim/Makefile
 maim/cmake_install.cmake
 maim/CMakeCache.txt
 maim/bin/maim
+maim/install_manifest.txt
 
 #dunst
 dunst/*.o
