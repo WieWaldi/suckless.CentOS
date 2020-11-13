@@ -20,15 +20,16 @@ declare -a X11files=(
     )
 
 declare -a sucklesstools=(
+    "dmenu"
     "dwm"
     "dwm-helper"
-    "dmenu"
-    "st"
+    "lsw"
     "slock"
     "sselp"
+    "st"
     "surf"
     "tabbed"
-    "lsw"
+    "xssstate"
     )
 
 declare -a naelstrof=(

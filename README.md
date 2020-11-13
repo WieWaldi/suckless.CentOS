@@ -99,4 +99,4 @@ suckless.org applications have been patched already.
 - **xdotool** - command-line X11 automation tool
 - **xmenu** - menu utility for X
 - **xmerge** - Merge and apply .Xresource
-
+- **xssstate** - display the state of the X screensaver extension
