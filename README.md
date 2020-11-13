@@ -74,6 +74,7 @@ suckless.org applications have been patched already.
 - **maim** - make image
 - **rotwall** - rotate wallpapers
 - **slock** — simple X screen locker (Version 1.4) contains the following patches.
+  - slock-capscolor-20170106-2d2a21a.diff
   - slock-message-20191002-b46028b.diff
   - slock-xresources-20191126-53e56c7.diff
 - **slop** - select operation
@@ -100,3 +101,11 @@ suckless.org applications have been patched already.
 - **xmenu** - menu utility for X
 - **xmerge** - Merge and apply .Xresource
 - **xssstate** - display the state of the X screensaver extension
+
+## Colors
+No, it's not a "The Blue Oyster" theme. But I like these colors anyway.
+| Color          | Hex |
+|---|---|
+| Deep Pink      |    ![#5f005f](https://via.placeholder.com/15/5f005f/000000?text=+) `#5f005f`|
+| Dark Magenta   |    ![#8700af](https://via.placeholder.com/15/8700af/000000?text=+) `#8700af`|
+| Medium Purple  |    ![#af87d7](https://via.placeholder.com/15/af87d7/000000?text=+) `#af87d7`|
