@@ -84,6 +84,9 @@ static const char *tags[] = { "", "", "", "", "", "", "", "
 static const Rule rules[] = {
 	/* class                instance                                title                           tags mask     iscentered    isfloating   monitor */
 	{ "Citrix",             "citrix",                               "Citrix Workspace",             1 << 1,       1,            1,          -1 },
+	{ "cool-retro-term",    "cool-retro-term",                      "Settings",                     0,            1,            1,          -1 },
+	{ "cool-retro-term",    "cool-retro-term",                      "cool-retro-term",              0,            1,            1,          -1 },
+	{ "cool-retro-term",    "cool-retro-term",                      "CMatrix",                      0,            1,            1,           2 },
 	{ "Deadbeef",           "deadbeef",                             "DeaDBeeF-1.8.4",               0,            1,            1,          -1 },
 	{ "dragonplayer",       "dragon",                               NULL,                           0,            1,            1,          -1 },
 	{ "Firefox",            "Navigator",                            NULL,                           1 << 8,       0,            0,          -1 },
@@ -99,6 +102,7 @@ static const Rule rules[] = {
 	{ "Thunderbird",        "Calendar",                             NULL,                           1 << 7,       1,            1,          -1 },
 	{ "Thunderbird",        "CardBook",                             NULL,                           1 << 7,       1,            1,          -1 },
 	{ "Thunderbird",        "Mail",                                 "About Mozilla Thunderbird",    1 << 7,       1,            1,          -1 },
+	{ "Thunderbird",        "Navigator",                            NULL,                           1 << 7,       1,            1,          -1 },
 	{ "Thunderbird",        "Msgcompose",                           NULL,                           1 << 7,       1,            1,          -1 },
 	{ "VirtualBox Machine", "VirtualBox Machine",                   NULL,                           1 << 5,       1,            1,          -1 },
 	{ "VirtualBox Manager", "VirtualBox Manager",                   NULL,                           0,            1,            1,          -1 },
