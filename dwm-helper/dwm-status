@@ -46,6 +46,12 @@ print_volume() {
     esac
 }
 
+print_temperature() {
+    tempcpu="$(sensors | grep "CPU Temp" | awk '{print $3}')"
+    tempgpu="$(echo "$(cat /sys/class/drm/card0/device/hwmon/hwmon2/temp1_input) / 1000" | bc)"
+    printf "CPU:${tempcpu} GPU:+${tempgpu}°C"
+}
+
 print_appleicons() {
     printf "    "
 }
@@ -62,7 +68,11 @@ while true; do
         printf " ${cpu_used}%%"
     }
 
-    xsetroot -name "$(print_volume) $(print_battery) $(print_cpu_used) $(print_mem_used) $(print_datetime)"
+    # xsetroot -name "$(print_appleicons) $(print_volume) $(print_battery) $(print_temperature) $(print_cpu_used) $(print_mem_used) $(print_datetime)"
+    # xsetroot -name "$(print_volume) $(print_battery) $(print_temperature) $(print_cpu_used) $(print_mem_used) $(print_datetime)"
+    # xsetroot -name "$(print_volume) $(print_battery) $(print_cpu_used) $(print_mem_used) $(print_datetime)"
+    # xsetroot -name "$(print_volume) $(print_cpu_used) $(print_mem_used) $(print_datetime)"
+    xsetroot -name "$(print_volume) $(print_temperature) $(print_cpu_used) $(print_mem_used) $(print_datetime)"
 
     # reset old rates
     cpu_idle_old=$cpu_idle_now
