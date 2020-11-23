@@ -7,11 +7,16 @@ prepare.log
 *.so*
 
 dwm/config.h
+dwm/dwm
 st/config.h
+st/st
 dmenu/config.h
+dmenu/dmenu
 dunst/config.h
 slock/config.h
+slock/slock
 surf/config.h
+surf/surf
 sxiv/config.h
 tabbed/config.h
 xmenu/config.h
