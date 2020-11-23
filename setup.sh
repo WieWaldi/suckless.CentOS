@@ -27,6 +27,7 @@ declare -a sucklesstools=(
     "slock"
     "sselp"
     "st"
+    "stw"
     "surf"
     "tabbed"
     "xssstate"
