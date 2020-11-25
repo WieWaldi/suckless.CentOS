@@ -106,8 +106,28 @@ suckless.org applications have been patched already.
 
 ## Colors
 No, it's not a "The Blue Oyster" theme. But I like these colors anyway.
-| Color          | Hex |
+| Color         | Hex |
 |---|---|
-| Deep Pink      |    ![#5f005f](https://via.placeholder.com/15/5f005f/000000?text=+) `#5f005f`|
-| Dark Magenta   |    ![#8700af](https://via.placeholder.com/15/8700af/000000?text=+) `#8700af`|
-| Medium Purple  |    ![#af87d7](https://via.placeholder.com/15/af87d7/000000?text=+) `#af87d7`|
+| Deep Pink     |    ![#5f005f](https://via.placeholder.com/15/5f005f/000000?text=+) `#5f005f`|
+| Dark Magenta  |    ![#8700af](https://via.placeholder.com/15/8700af/000000?text=+) `#8700af`|
+| Medium Purple |    ![#af87d7](https://via.placeholder.com/15/af87d7/000000?text=+) `#af87d7`|
+
+![Solarized Theme](https://github.com/altercation/solarized)
+| Color         | Hex |
+| base03        |   ![#002b36](https://via.placeholder.com/15/002b36/000000?text=+) `#002b36`|
+| base02        |   ![#073642](https://via.placeholder.com/15/073642/000000?text=+) `#073642`|
+| base01        |   ![#586e75](https://via.placeholder.com/15/586e75/000000?text=+) `#586e75`|
+| base00        |   ![#657b83](https://via.placeholder.com/15/657b83/000000?text=+) `#657b83`|
+| base0         |   ![#839496](https://via.placeholder.com/15/839496/000000?text=+) `#839496`|
+| base1         |   ![#93a1a1](https://via.placeholder.com/15/93a1a1/000000?text=+) `#93a1a1`|
+| base2         |   ![#eee8d5](https://via.placeholder.com/15/eee8d5/000000?text=+) `#eee8d5`|
+| base3         |   ![#fdf6e3](https://via.placeholder.com/15/fdf6e3/000000?text=+) `#fdf6e3`|
+| yellow        |   ![#b58900](https://via.placeholder.com/15/b58900/000000?text=+) `#b58900`|
+| orange        |   ![#cb4b16](https://via.placeholder.com/15/cb4b16/000000?text=+) `#cb4b16`|
+| red           |   ![#dc322f](https://via.placeholder.com/15/dc322f/000000?text=+) `#dc322f`|
+| magenta       |   ![#d33682](https://via.placeholder.com/15/d33682/000000?text=+) `#d33682`|
+| violet        |   ![#6c71c4](https://via.placeholder.com/15/6c71c4/000000?text=+) `#6c71c4`|
+| blue          |   ![#268bd2](https://via.placeholder.com/15/268bd2/000000?text=+) `#268bd2`|
+| cyan          |   ![#2aa198](https://via.placeholder.com/15/2aa198/000000?text=+) `#2aa198`|
+| green         |   ![#859900](https://via.placeholder.com/15/859900/000000?text=+) `#859900`|
+                
