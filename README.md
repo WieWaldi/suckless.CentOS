@@ -114,6 +114,7 @@ No, it's not a "The Blue Oyster" theme. But I like these colors anyway.
 
 ![Solarized Theme](https://github.com/altercation/solarized)
 | Color         | Hex |
+|---|---|
 | base03        |   ![#002b36](https://via.placeholder.com/15/002b36/000000?text=+) `#002b36`|
 | base02        |   ![#073642](https://via.placeholder.com/15/073642/000000?text=+) `#073642`|
 | base01        |   ![#586e75](https://via.placeholder.com/15/586e75/000000?text=+) `#586e75`|
@@ -130,4 +131,3 @@ No, it's not a "The Blue Oyster" theme. But I like these colors anyway.
 | blue          |   ![#268bd2](https://via.placeholder.com/15/268bd2/000000?text=+) `#268bd2`|
 | cyan          |   ![#2aa198](https://via.placeholder.com/15/2aa198/000000?text=+) `#2aa198`|
 | green         |   ![#859900](https://via.placeholder.com/15/859900/000000?text=+) `#859900`|
-                
