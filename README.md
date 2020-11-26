@@ -95,6 +95,7 @@ suckless.org applications have been patched already.
   - surf-dlconsole-20190919-d068a38.diff
   - surf-git-20170323-webkit2-searchengines.diff
   - surf-scrollmultiply-2.0.diff
+  - surf-2.0-homepage.diff
 - **sxiv** - Simple X Image Viewer
 - **tabbed** - generic tabbed interface
 - **xclickroot** - run command on button press on root window
