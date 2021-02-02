@@ -17,6 +17,7 @@ slock/config.h
 slock/slock
 surf/config.h
 surf/surf
+stw/stw
 sxiv/config.h
 tabbed/config.h
 xmenu/config.h

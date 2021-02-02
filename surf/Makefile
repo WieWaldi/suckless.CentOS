@@ -58,7 +58,9 @@ dist: distclean
 
 install: all
 	mkdir -p $(HOME)/.config/surf
+	mkdir -p $(HOME)/.config/surf/styles
 	cp -f bookmarks $(HOME)/.config/surf
+	cp -f default.css $(HOME)/.config/surf/styles
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp -f surf $(DESTDIR)$(PREFIX)/bin
 	cp -f surf-open.sh $(DESTDIR)$(PREFIX)/bin
