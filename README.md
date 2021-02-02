@@ -94,6 +94,8 @@ suckless.org applications have been patched already.
   - surf-bookmarks-20170722-723ff26.diff
   - surf-dlconsole-20190919-d068a38.diff
   - surf-git-20170323-webkit2-searchengines.diff
+  - surf-notifications-20201223-7dcce9e1.diff
+  - surf-popup-2.0.diff
   - surf-scrollmultiply-2.0.diff
   - surf-2.0-homepage.diff
 - **sxiv** - Simple X Image Viewer
