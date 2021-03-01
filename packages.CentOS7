@@ -51,6 +51,7 @@ libjpeg-turbo-devel
 libpciaccess-devel
 libxcb-devel
 make
+mediainfo
 mesa-dri-drivers
 mesa-dri-drivers
 mesa-libEGL
