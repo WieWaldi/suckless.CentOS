@@ -10,6 +10,7 @@ cmake
 dbus-devel
 dbus-x11
 elfutils-libelf-devel
+exiv2
 ffmpegthumbnailer
 fftw-devel
 ftp
@@ -25,6 +26,8 @@ glm-devel
 gstreamer*
 gtk2-devel
 htop
+ImageMagick
+ImageMagick-devel
 imlib2-devel
 imsettings
 iniparser
