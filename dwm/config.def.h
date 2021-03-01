@@ -81,6 +81,7 @@ ResourcePref resources[] = {
 /* static const char *tags[] = { "", "Finder", "File", "Edit", "View", "Settings", "Go", "Window", "Help"}; */
 static const char *tags[] = { "", "", "", "", "", "", "", "", "" };
 
+
 static const Rule rules[] = {
 	/* class                instance                                title                           tags mask     iscentered    isfloating   monitor */
 	{ "Citrix",             "citrix",                               "Citrix Workspace",             1 << 1,       1,            1,          -1 },
@@ -97,6 +98,7 @@ static const Rule rules[] = {
 	{ "Krasses Radio",      NULL,                                   NULL,                           1 << 1,       1,            1,          -1 },
 	{ "mpv",                NULL,                                   NULL,                           0,            1,            1,          -1 },
 	{ "Pavucontrol",        "pavucontrol",                          NULL,                           0,            1,            1,          -1 },
+	{ "Surf",               NULL,                                   NULL,                           0,            1,            1,          -1 },
 	{ "Teams",              NULL,                                   NULL,                           1 << 6,       0,            0,          -1 },
 	{ "Thunderbird",        NULL,                                   NULL,                           1 << 7,       0,            0,          -1 },
 	{ "Thunderbird",        "Calendar",                             NULL,                           1 << 7,       1,            1,          -1 },
