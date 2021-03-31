@@ -39,10 +39,12 @@ as well.
 Just to make that clear. You don't have to use the setup script. You may walk
 through all sub directories and pick what you want to build and install.
 
-To get slock working you have to set uid correctly.
+To get slock/gllock working you have to set uid correctly.
 ```
 sudo chown root:root ~/.local/bin/slock
 sudo chmod u+s ~/.local/bin/slock
+sudo chown root:root ~/.local/bin/gllock
+sudo chmod u+s ~/.local/bin/gllock
 ```
 
 ## Contents
