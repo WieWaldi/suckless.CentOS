@@ -4,6 +4,7 @@
 #include <poll.h>
 #include <signal.h>
 #include <stdarg.h>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -29,6 +30,7 @@ struct g {
 static char *argv0;
 static unsigned int screen_width, screen_height;
 static unsigned int window_width, window_height;
+static bool hidden = true;
 static char **cmd;
 static pid_t cmdpid;
 static FILE *inputf;
@@ -74,7 +76,7 @@ static void
 usage()
 {
 	die("\
-usage: stw [-x pos] [-y pos] [-X pos] [-Y pos] [-a align]\n\
+usage: stw [-t ] [-x pos] [-y pos] [-X pos] [-Y pos] [-a align]\n\
            [-f foreground] [-b background] [-F font] [-B borderpx]\n\
            [-p period] [-A alpha] command [arg ...]"
 	);
@@ -176,6 +178,10 @@ draw()
 		window_height += xfont->ascent + xfont->descent;
 	}
 
+	hidden = window_width == 0 || window_height == 0;
+	if (hidden)
+		return;
+
 	window_width += borderpx * 2;
 	window_height += borderpx * 2;
 
@@ -246,10 +252,10 @@ pos(struct g g, int size)
 static void
 run()
 {
-	int restart_now = 1;
+	bool restart_now = true;
 	for (;;) {
 		if (restart_now && cmdpid == 0 && inputf == NULL) {
-			restart_now = 0;
+			restart_now = false;
 			start_cmd();
 		}
 
@@ -281,7 +287,7 @@ run()
 		}
 
 		// Read subcommand output
-		if (inputf && (fds[2].revents & POLLIN)) {
+		if (inputf && (fds[2].revents & POLLIN || fds[2].revents & POLLHUP)) {
 			read_text();
 			draw();
 			dirty = 1;
@@ -296,12 +302,15 @@ run()
 			if (s == 'c') {
 				// SIGCHLD received
 				reap();
-				if (!restart_now)
+				if (period < 0) {
+					restart_now = true;
+				} else if (!restart_now) {
 					alarm(period);
+				}
 
 			} else if (s == 'a' && cmdpid == 0) {
 				// SIGALRM received
-				restart_now = 1;
+				restart_now = true;
 			}
 		}
 
@@ -321,12 +330,23 @@ run()
 						die("kill:");
 
 					alarm(0);
-					restart_now = 1;
+					restart_now = true;
 				}
 			}
 		}
 
-		if (dirty && window_width > 0 && window_height > 0) {
+		if (hidden) {
+			XUnmapWindow(dpy, win);
+			XSync(dpy, False);
+
+		} else if (dirty) {
+			if (window_on_top) {
+				XRaiseWindow(dpy, win);
+			} else {
+				XLowerWindow(dpy, win);
+			}
+			
+			XMapWindow(dpy, win);
 
 			int x = pos(px, screen_width);
 			if (px.prefix == '-') {
@@ -425,8 +445,6 @@ setup(char *font)
 	gcvalues.graphics_exposures = False;
 	xgc = XCreateGC(dpy, drawable, GCGraphicsExposures, &gcvalues);
 
-	XLowerWindow(dpy, win);
-	XMapWindow(dpy, win);
 	XSelectInput(dpy, win, swa.event_mask);
 }
 
@@ -481,7 +499,7 @@ stoi(char *s, int *r) {
 	char *e;
 	long int li = strtol(s, &e, 10);
 	*r = (int)li;
-	return s[0] < '0' || s[0] > '9' \
+	return ((s[0] < '0' || s[0] > '9') && s[0] != '-') \
 		|| li < INT_MIN || li > INT_MAX \
 		|| *e != '\0';
 }
@@ -539,6 +557,9 @@ main(int argc, char *argv[])
 		if (*s == '\0' || *end != '\0' || alpha < 0 || alpha > 1)
 			usage();
 	} break;
+	case 't':
+		window_on_top = true;
+		break;
 	default:
 		usage();
 	} ARGEND
