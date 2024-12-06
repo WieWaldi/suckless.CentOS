@@ -1,3 +1,10 @@
+<img src="https://raw.githubusercontent.com/WieWaldi/badges/master/img/RZ-Amper_Logo_135x135.png" align="left" width="135px" height="135px" />
+
+### suckless.CentOS by WieWaldi
+*My personal build of dwm and other tools to form a suckless X11 environment.*  
+[![MIT Licence](https://raw.githubusercontent.com/WieWaldi/badges/master/badges/licence_mit.svg)](https://opensource.org/licenses/mit-license.php)
+![Maintained](https://raw.githubusercontent.com/WieWaldi/badges/master/badges/maintained_no-red.svg)
+
 # suckless.CentOS
 WieWaldi's collection of suckless applications and other simple tools adapted to
 a minimal installation of CentOS. Yes, the name of this repository may be kinda
